@@ -1,0 +1,44 @@
+.card.testimonial-card {
+  padding: 28px;
+  text-align: left;
+  box-shadow: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px -10px rgba(123, 47, 247, 0.12);
+}
+
+.testimonial-card__text {
+  font-size: 15px;
+  line-height: 165%;
+  color: var(--text);
+  margin-bottom: 20px !important;
+  font-style: italic;
+}
+
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-card__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.testimonial-card__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.testimonial-card__role {
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0.7;
+}

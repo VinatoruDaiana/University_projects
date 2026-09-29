@@ -1,0 +1,141 @@
+{
+  "info": {
+    "name": "Social Media Platform – Backend",
+    "_postman_id": "f9a9b27d-1c3e-4e7c-a4f3-2b1e50e2c6b1",
+    "description": "Collection for Spring Boot backend endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "http://localhost:8081/api" },
+    { "key": "user_id",  "value": "1" },
+    { "key": "album_id", "value": "1" }
+  ],
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register user",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"testuser\",\n  \"email\": \"test@example.com\",\n  \"password\": \"Password1\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/auth/register" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Albums",
+      "item": [
+        {
+          "name": "1. Create album",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Vacation 2024\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/albums?userId={{user_id}}",
+              "query": [{ "key": "userId", "value": "{{user_id}}" }],
+              "path": ["albums"]
+            }
+          }
+        },
+        {
+          "name": "2. Get user albums",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/users/{{user_id}}/albums",
+              "path": ["users", "{{user_id}}", "albums"]
+            }
+          }
+        },
+        {
+          "name": "3. Update album (rename)",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Summer Trip 2024\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/albums/{{album_id}}?userId={{user_id}}",
+              "query": [{ "key": "userId", "value": "{{user_id}}" }],
+              "path": ["albums", "{{album_id}}"]
+            }
+          }
+        },
+        {
+          "name": "4. Get album posts",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/albums/{{album_id}}/posts",
+              "path": ["albums", "{{album_id}}", "posts"]
+            }
+          }
+        },
+        {
+          "name": "5. Delete album",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/albums/{{album_id}}?userId={{user_id}}",
+              "query": [{ "key": "userId", "value": "{{user_id}}" }],
+              "path": ["albums", "{{album_id}}"]
+            }
+          }
+        },
+        {
+          "name": "ERR – Update album wrong owner (403)",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Hack attempt\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/albums/{{album_id}}?userId=9999",
+              "query": [{ "key": "userId", "value": "9999" }],
+              "path": ["albums", "{{album_id}}"]
+            }
+          }
+        },
+        {
+          "name": "ERR – Get albums user not found (404)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/users/9999/albums",
+              "path": ["users", "9999", "albums"]
+            }
+          }
+        },
+        {
+          "name": "ERR – Create album empty name (400)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/albums?userId={{user_id}}",
+              "query": [{ "key": "userId", "value": "{{user_id}}" }]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

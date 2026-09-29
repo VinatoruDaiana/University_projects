@@ -1,0 +1,366 @@
+/* =================================================================
+   PULSE DUAL-PANE DETAILED VIEW MODAL OVERLAY
+   ================================================================= */
+
+/* ─── CENTERING BACKGROUND OVERLAY ────────────────────────── */
+.post-modal-backdrop {
+  position: fixed;
+  inset: 0; 
+  z-index: 9999; 
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* ─── SIDE-BY-SIDE SPLIT MODAL DISPLAY ─────────────────────── */
+.post-modal-content {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 1040px; 
+  height: 80vh;      
+  max-height: 720px;
+  display: flex;    
+  box-shadow: 0 24px 64px -16px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  animation: modalPop 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+/* Left pane handles your core post content parameters */
+.post-modal-left-pane {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-right: 1px solid var(--border);
+  overflow-y: auto; /* Gracefully scrolls left side if post text description is long */
+}
+
+/* Right pane isolates your custom comment stream context */
+.post-modal-right-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* ─── ADAPTIVE TEXT COLOR RULES ────────────────────────────── */
+.post-text {
+  font-size: 15px;
+  color: var(--text-h); /* Safe project variable that flips color systematically */
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.author-date {
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0.6;
+}
+
+.post-caption {
+  font-size: 13px;
+  color: var(--text);
+  padding: 10px 14px;
+  margin: 0;
+  border-top: 1.5px solid var(--border);
+  background: var(--bg);
+}
+
+/* ─── LAYOUTS AND HEADERS ──────────────────────────────────── */
+.post-detail-header {
+  margin-bottom: 16px;
+}
+
+.post-detail-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.post-photo-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1.5px solid var(--border);
+}
+
+.post-photo {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.post-detail-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* Anchors the action controls safely to bottom of layout */
+  padding-top: 16px;
+}
+
+.actions-right {
+  display: flex;
+  gap: 8px;
+}
+
+.post-modal-right-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-modal-right-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.post-modal-close {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: var(--text);
+  cursor: pointer;
+  padding: 4px;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+.post-modal-close:hover {
+  opacity: 1;
+}
+
+/* ─── MODAL STREAM SCROLLBOX OVERRIDES ──────────────────────── */
+.post-modal-comments-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Forces child list layers inside comment subcomponent to stretch and fill space correctly */
+.post-modal-comments-container .comment-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-modal-comments-container .comments-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 24px;
+}
+
+.post-modal-comments-container .comment-input-form {
+  padding: 16px 24px;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+/* ─── DETAILED COMMENT INNER STYLING OVERRIDES (DARK COMPATIBLE) ─── */
+.post-modal-comments-container .comment-item {
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.post-modal-comments-container .comment-item:last-child {
+  border-bottom: none;
+}
+
+.post-modal-comments-container .comment-author {
+  color: var(--text-h) !important; /* Forces dark mode text readability */
+  font-weight: 600;
+  font-size: 13.5px;
+}
+
+.post-modal-comments-container .comment-date {
+  color: var(--text) !important;
+  font-size: 11.5px;
+  opacity: 0.55;
+}
+
+.post-modal-comments-container .comment-text {
+  color: var(--text-h) !important;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 6px 0 10px 0;
+}
+
+/* Cleans up raw text action buttons under individual comments */
+.post-modal-comments-container .comment-like-btn,
+.post-modal-comments-container .comment-action-btn {
+  background: transparent;
+  border: none;
+  color: var(--text) !important;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+
+.post-modal-comments-container .comment-like-btn:hover,
+.post-modal-comments-container .comment-action-btn:hover {
+  background: var(--accent-bg, rgba(255, 255, 255, 0.05));
+  color: var(--text-h) !important;
+}
+
+.post-modal-comments-container .comment-action-btn.danger:hover {
+  color: #e53e3e !important;
+  background: rgba(229, 62, 62, 0.08);
+}
+
+.post-modal-comments-container .comment-like-btn.liked {
+  color: #e53e3e !important;
+}
+
+.post-modal-comments-container .comments-empty {
+  color: var(--text) !important;
+  opacity: 0.65;
+  text-align: center;
+  padding: 32px 0;
+}
+
+/* ─── FORM INPUT FIELDS FIXES ────────────────────────────── */
+.post-modal-comments-container .comment-input-form input[type="text"] {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  color: var(--text-h);
+  padding: 8px 14px;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.post-modal-comments-container .comment-input-form input[type="text"]:focus {
+  border-color: var(--accent-border);
+}
+
+/* ─── SYSTEM ACTION CONTROLS ───────────────────────────────── */
+.placeholder-action-btn {
+  background: transparent;
+  border: 1.5px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text);
+  transition: all 0.15s;
+}
+.placeholder-action-btn:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--text-h);
+}
+
+.post-modal-message {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 40px;
+  color: var(--text-h);
+  font-weight: 600;
+}
+
+/* ─── LAYOUT TRANSITION ANIMATIONS ────────────────────────── */
+@keyframes modalPop {
+  from { transform: scale(0.96); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-modal-right-pane {
+    background: rgba(255, 255, 255, 0.01); /* Soft contrast shift for dark backgrounds */
+  }
+}
+
+/* ─── POST EDIT AND DELETE UI ────────────────────────────── */
+
+.post-action-error {
+  color: #e53e3e;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.post-edit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.post-edit-textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 15px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 80px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.post-edit-textarea:focus {
+  border-color: var(--accent-border);
+}
+
+.post-edit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Overrides for specific action buttons */
+.placeholder-action-btn.edit-save {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--text-h);
+}
+
+.placeholder-action-btn.delete {
+  color: #e53e3e;
+  border-color: rgba(229, 62, 62, 0.3);
+}
+
+.placeholder-action-btn.delete:hover {
+  background: rgba(229, 62, 62, 0.08);
+  border-color: rgba(229, 62, 62, 0.5);
+  color: #e53e3e; /* overrides the default hover text color */
+}

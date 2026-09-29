@@ -1,0 +1,551 @@
+
+*** Running vivado
+    with args -log test_env.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source test_env.tcl -notrace
+Command: synth_design -top test_env -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8668 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 429.500 ; gain = 98.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:48]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 7 wide and choice expression is 6 wide [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:226]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 7 wide and choice expression is 6 wide [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:227]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 7 wide and choice expression is 6 wide [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:228]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 7 wide and choice expression is 6 wide [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:229]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 7 wide and choice expression is 6 wide [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:230]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 7 wide and choice expression is 6 wide [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:231]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 7 wide and choice expression is 6 wide [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:232]
+WARNING: [Synth 8-614] signal 'sw' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:223]
+WARNING: [Synth 8-614] signal 'AluRes_out' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:239]
+WARNING: [Synth 8-614] signal 'MemData' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:239]
+INFO: [Synth 8-3491] module 'instrFetch' declared at 'C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MIPS.vhd:35' bound to instance 'instrFetch1' of component 'instrFetch' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'instrFetch' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MIPS.vhd:51]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MIPS.vhd:78]
+WARNING: [Synth 8-614] signal 'Branch_Address' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MIPS.vhd:101]
+WARNING: [Synth 8-614] signal 'Sumator_out' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MIPS.vhd:101]
+WARNING: [Synth 8-614] signal 'Jump_Address' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MIPS.vhd:114]
+WARNING: [Synth 8-614] signal 'MuxBranch_out' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MIPS.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'instrFetch' (1#1) [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MIPS.vhd:51]
+INFO: [Synth 8-3491] module 'InstrDecode' declared at 'C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstrDecode.vhd:35' bound to instance 'instr_Decode' of component 'InstrDecode' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'InstrDecode' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstrDecode.vhd:52]
+WARNING: [Synth 8-614] signal 'instr' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstrDecode.vhd:64]
+WARNING: [Synth 8-614] signal 'instr' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstrDecode.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'InstrDecode' (2#1) [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstrDecode.vhd:52]
+INFO: [Synth 8-3491] module 'MainControl' declared at 'C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MainControl.vhd:35' bound to instance 'main_contro' of component 'MainControl' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'MainControl' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MainControl.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'MainControl' (3#1) [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MainControl.vhd:50]
+INFO: [Synth 8-3491] module 'InstructionExecute' declared at 'C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstructionExecute.vhd:34' bound to instance 'instrExecute' of component 'InstructionExecute' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'InstructionExecute' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstructionExecute.vhd:50]
+WARNING: [Synth 8-614] signal 'Mux_sig' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstructionExecute.vhd:97]
+WARNING: [Synth 8-614] signal 'Mux_sig' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstructionExecute.vhd:109]
+WARNING: [Synth 8-614] signal 'shiftL' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstructionExecute.vhd:122]
+WARNING: [Synth 8-614] signal 'shiftR' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstructionExecute.vhd:122]
+WARNING: [Synth 8-614] signal 'AluOut_sig' is read in the process but is not in the sensitivity list [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstructionExecute.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'InstructionExecute' (4#1) [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstructionExecute.vhd:50]
+INFO: [Synth 8-3491] module 'UnitateMem' declared at 'C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/UnitateMem.vhd:34' bound to instance 'unitate_Memorie' of component 'UnitateMem' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'UnitateMem' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/UnitateMem.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'UnitateMem' (5#1) [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/UnitateMem.vhd:47]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MPG.vhd:26' bound to instance 'MPG1' of component 'MPG' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MPG.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (6#1) [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/MPG.vhd:32]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/SSD.vhd:27' bound to instance 'SSD1' of component 'SSD' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/SSD.vhd:36]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/SSD.vhd:55]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/SSD.vhd:72]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/SSD.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (7#1) [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/SSD.vhd:36]
+WARNING: [Synth 8-3848] Net led in module/entity test_env does not have driver. [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:40]
+WARNING: [Synth 8-3848] Net instrD in module/entity test_env does not have driver. [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:72]
+WARNING: [Synth 8-3848] Net instrMC in module/entity test_env does not have driver. [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:83]
+WARNING: [Synth 8-3848] Net AluRes in module/entity test_env does not have driver. [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:89]
+WARNING: [Synth 8-3848] Net AluSrc_execute in module/entity test_env does not have driver. [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:90]
+WARNING: [Synth 8-3848] Net AluOp in module/entity test_env does not have driver. [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (8#1) [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:48]
+WARNING: [Synth 8-3331] design MainControl has unconnected port clk
+WARNING: [Synth 8-3331] design test_env has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[7]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[6]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[5]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[1]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[0]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[1]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 486.277 ; gain = 155.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[25] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[24] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[23] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[22] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[21] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[20] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[19] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[18] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[17] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[16] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[15] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[14] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[13] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[12] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[11] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[10] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[9] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[8] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[7] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[6] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[5] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[4] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[3] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[2] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[1] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin instr_Decode:instr[0] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:252]
+WARNING: [Synth 8-3295] tying undriven pin main_contro:instr[5] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:253]
+WARNING: [Synth 8-3295] tying undriven pin main_contro:instr[4] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:253]
+WARNING: [Synth 8-3295] tying undriven pin main_contro:instr[3] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:253]
+WARNING: [Synth 8-3295] tying undriven pin main_contro:instr[2] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:253]
+WARNING: [Synth 8-3295] tying undriven pin main_contro:instr[1] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:253]
+WARNING: [Synth 8-3295] tying undriven pin main_contro:instr[0] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:253]
+WARNING: [Synth 8-3295] tying undriven pin instrExecute:AluSrc to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:254]
+WARNING: [Synth 8-3295] tying undriven pin instrExecute:AluOp[5] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:254]
+WARNING: [Synth 8-3295] tying undriven pin instrExecute:AluOp[4] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:254]
+WARNING: [Synth 8-3295] tying undriven pin instrExecute:AluOp[3] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:254]
+WARNING: [Synth 8-3295] tying undriven pin instrExecute:AluOp[2] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:254]
+WARNING: [Synth 8-3295] tying undriven pin instrExecute:AluOp[1] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:254]
+WARNING: [Synth 8-3295] tying undriven pin instrExecute:AluOp[0] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:254]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[31] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[30] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[29] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[28] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[27] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[26] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[25] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[24] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[23] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[22] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[21] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[20] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[19] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[18] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[17] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[16] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[15] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[14] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[13] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[12] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[11] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[10] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[9] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[8] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[7] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[6] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[5] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[4] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[3] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[2] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[1] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+WARNING: [Synth 8-3295] tying undriven pin unitate_Memorie:AluRes_in[0] to constant 0 [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/test_env.vhd:255]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 486.277 ; gain = 155.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 486.277 ; gain = 155.168
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ASUS/Downloads/NexysA7_test_env.xdc]
+Finished Parsing XDC File [C:/Users/ASUS/Downloads/NexysA7_test_env.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Downloads/NexysA7_test_env.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 813.801 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 813.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 813.852 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 813.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 813.852 ; gain = 482.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 813.852 ; gain = 482.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 813.852 ; gain = 482.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.srcs/sources_1/new/InstructionExecute.vhd:126]
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "AluCtrl" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 813.852 ; gain = 482.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	  33 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   8 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_env 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+Module instrFetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  33 Input     32 Bit        Muxes := 1     
+Module InstrDecode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+Module InstructionExecute 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   8 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module UnitateMem 
+Detailed RTL Component Info : 
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module MPG 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element unitate_Memorie/ram_reg was removed. 
+WARNING: [Synth 8-3331] design test_env has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[7]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[6]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[5]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[1]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[0]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[1]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 813.852 ; gain = 482.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------------------+-----------+----------------------+---------------+
+|test_env    | instr_Decode/regFile_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+--------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 825.492 ; gain = 494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 838.656 ; gain = 507.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------------------+-----------+----------------------+---------------+
+|test_env    | instr_Decode/regFile_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+--------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 838.910 ; gain = 507.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 838.910 ; gain = 507.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 838.910 ; gain = 507.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 838.910 ; gain = 507.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 838.910 ; gain = 507.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 838.910 ; gain = 507.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 838.910 ; gain = 507.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    18|
+|3     |LUT1   |     3|
+|4     |LUT2   |     6|
+|5     |LUT3   |    40|
+|6     |LUT4   |    22|
+|7     |LUT5   |     8|
+|8     |LUT6   |    54|
+|9     |MUXF7  |     6|
+|10    |RAM32M |    12|
+|11    |FDCE   |    31|
+|12    |FDRE   |    38|
+|13    |IBUF   |    11|
+|14    |OBUF   |    15|
+|15    |OBUFT  |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+------------+------+
+|      |Instance       |Module      |Cells |
++------+---------------+------------+------+
+|1     |top            |            |   281|
+|2     |  MPG1         |MPG         |    32|
+|3     |  SSD1         |SSD         |    31|
+|4     |  instrFetch1  |instrFetch  |    99|
+|5     |  instr_Decode |InstrDecode |    73|
++------+---------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 838.910 ; gain = 507.801
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 838.910 ; gain = 180.227
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 838.910 ; gain = 507.801
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 848.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 155 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 848.527 ; gain = 530.582
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 848.527 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/lab1AC.runs/synth_1/test_env.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_env_utilization_synth.rpt -pb test_env_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 22:21:44 2024...

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun  4 16:09:50 2024
+# Process ID: 15920
+# Current directory: C:/Users/ASUS/Desktop/AN2_SEM2/AC/Mips_pipeline/LAB1/mips_pipeline_v
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18624 C:\Users\ASUS\Desktop\AN2_SEM2\AC\Mips_pipeline\LAB1\mips_pipeline_v\mips_pipeline_v.xpr
+# Log file: C:/Users/ASUS/Desktop/AN2_SEM2/AC/Mips_pipeline/LAB1/mips_pipeline_v/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/AN2_SEM2/AC/Mips_pipeline/LAB1/mips_pipeline_v\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/AN2_SEM2/AC/Mips_pipeline/LAB1/mips_pipeline_v/mips_pipeline_v.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ASUS/Desktop/AN2_SEM2/AC/LAB1/mips_pipeline_v' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 765.230 ; gain = 162.055
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  4 16:10:58 2024...

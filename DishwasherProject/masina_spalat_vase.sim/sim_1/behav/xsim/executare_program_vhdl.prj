@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../masina_spalat_vase.srcs/sources_1/new/COUNTER_HM.vhd" \
+"../../../../masina_spalat_vase.srcs/sources_1/new/executare_program.vhd" \
+
+# Do not sort compile order
+nosort

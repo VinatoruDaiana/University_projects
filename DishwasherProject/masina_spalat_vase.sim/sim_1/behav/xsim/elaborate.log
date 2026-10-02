@@ -1,0 +1,20 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xillinix/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fd0470e598884a57878f9a8c58ebc144 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_counter_behav xil_defaultlib.test_counter -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'd1_min' [D:/DSD/COLOCVIU_PB/masina_spalat_vase/masina_spalat_vase.srcs/sources_1/new/COUNTER_HM.vhd:49]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'd0_min' [D:/DSD/COLOCVIU_PB/masina_spalat_vase/masina_spalat_vase.srcs/sources_1/new/COUNTER_HM.vhd:50]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'hour' [D:/DSD/COLOCVIU_PB/masina_spalat_vase/masina_spalat_vase.srcs/sources_1/new/COUNTER_HM.vhd:51]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.COUNTER_HM [counter_hm_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_counter
+Built simulation snapshot test_counter_behav

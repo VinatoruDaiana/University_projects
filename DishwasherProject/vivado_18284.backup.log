@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 27 00:23:03 2023
+# Process ID: 18284
+# Current directory: C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/PROIECT PSN/masina_spalat_vase
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent43428 C:\Users\Petrenciuc Amelia\OneDrive\Desktop\PSN\PROIECT PSN\masina_spalat_vase\masina_spalat_vase.xpr
+# Log file: C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/PROIECT PSN/masina_spalat_vase/vivado.log
+# Journal file: C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/PROIECT PSN/masina_spalat_vase\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/PROIECT PSN/masina_spalat_vase/masina_spalat_vase.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/debouncer.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/counter_4_bits.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 814.555 ; gain = 164.234
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/Petrenciuc Amelia/OneDrive/Desktop/counter_4_bits.vhd} {C:/Users/Petrenciuc Amelia/OneDrive/Desktop/debouncer.vhd}}
+WARNING: [filemgmt 56-12] File 'C:/Users/Petrenciuc Amelia/OneDrive/Desktop/counter_4_bits.vhd' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Petrenciuc Amelia/OneDrive/Desktop/debouncer.vhd' cannot be added to the project because it already exists in the project, skipping this file
+save_project_as SPALAT_VASE {C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/PROIECT PSN/SPALAT_VASE} -force
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 27 00:33:10 2023...

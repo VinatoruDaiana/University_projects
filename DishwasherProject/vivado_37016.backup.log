@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 27 00:57:40 2023
+# Process ID: 37016
+# Current directory: C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/PROIECT PSN/masina_spalat_vase
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent44444 C:\Users\Petrenciuc Amelia\OneDrive\Desktop\PSN\PROIECT PSN\masina_spalat_vase\masina_spalat_vase.xpr
+# Log file: C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/PROIECT PSN/masina_spalat_vase/vivado.log
+# Journal file: C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/PROIECT PSN/masina_spalat_vase\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/PROIECT PSN/masina_spalat_vase/masina_spalat_vase.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/debouncer.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Petrenciuc Amelia/OneDrive/Desktop/PSN/DEBOUNCER/DEBOUNCER.srcs/sources_1/new/counter_4_bits.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 842.004 ; gain = 196.773
+update_compile_order -fileset sources_1eexit
+INFO: [Common 17-206] Exiting Vivado at Sat May 27 02:23:23 2023...

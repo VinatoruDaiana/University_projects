@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD/COLOCVIU_PB/masina_spalat_vase/masina_spalat_vase.srcs/sim_1/new/test_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'simulare_program'
+ERROR: [VRFC 10-3006] 'D:/DSD/COLOCVIU_PB/masina_spalat_vase/masina_spalat_vase.sim/sim_1/behav/xsim/xsim.dir/xil_defaultlib/executare_program.vdb' needs to be re-saved since 'xil_defaultlib.counter_hm' changed
+ERROR: [VRFC 10-3032] 'xil_defaultlib.executare_program' failed to restore
+ERROR: [VRFC 10-2987] 'executare_program' is not compiled in library 'xil_defaultlib' [D:/DSD/COLOCVIU_PB/masina_spalat_vase/masina_spalat_vase.srcs/sim_1/new/test_counter.vhd:44]
+ERROR: [VRFC 10-3006] 'D:/DSD/COLOCVIU_PB/masina_spalat_vase/masina_spalat_vase.sim/sim_1/behav/xsim/xsim.dir/xil_defaultlib/executare_program.vdb' needs to be re-saved since 'xil_defaultlib.counter_hm' changed
+ERROR: [VRFC 10-3032] 'xil_defaultlib.executare_program' failed to restore
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [D:/DSD/COLOCVIU_PB/masina_spalat_vase/masina_spalat_vase.srcs/sim_1/new/test_counter.vhd:38]
+INFO: [VRFC 10-3070] VHDL file 'D:/DSD/COLOCVIU_PB/masina_spalat_vase/masina_spalat_vase.srcs/sim_1/new/test_counter.vhd' ignored due to errors

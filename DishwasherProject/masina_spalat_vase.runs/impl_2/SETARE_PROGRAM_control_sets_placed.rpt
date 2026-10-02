@@ -1,0 +1,257 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri May 26 20:35:21 2023
+| Host         : Ioana running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SETARE_PROGRAM_control_sets_placed.rpt
+| Design       : SETARE_PROGRAM
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   185 |
+| Unused register locations in slices containing registers |  1145 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |          142 |
+|      2 |           19 |
+|      4 |            1 |
+|      7 |            8 |
+|      8 |            1 |
+|      9 |            2 |
+|     11 |            1 |
+|     14 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |           13 |
+| No           | No                    | Yes                    |             193 |          163 |
+| No           | Yes                   | No                     |             104 |           51 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             280 |           68 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+--------------------------------------+----------------------------------------+------------------+----------------+
+|                 Clock Signal                 |             Enable Signal            |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++----------------------------------------------+--------------------------------------+----------------------------------------+------------------+----------------+
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_14          |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_16          |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_2           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_6           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_4           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_13          |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_3           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_7           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_12          |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_0           |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_16          |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_2           |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_6           |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_4           |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_13          |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_3           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_8           |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_7           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_1           |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_12          |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_8           |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_1           |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_11          |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | RESET_IBUF                             |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_15          |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_5           |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET             |                1 |              1 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | RESET_IBUF                             |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_0           |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_16          |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_2           |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_6           |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_4           |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_13          |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_3           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_14          |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_7           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_15          |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_12          |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_8           |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_1           |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_11          |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_14          |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_15          |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_5           |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET             |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_5           |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_0           |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_16          |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_2           |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_6           |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_4           |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_13          |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_3           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET             |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_7           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | RESET_IBUF                             |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_12          |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_8           |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_1           |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_11          |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_14          |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_15          |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_5           |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET             |                1 |              1 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | RESET_IBUF                             |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_0           |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_16          |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_2           |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_6           |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_4           |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_13          |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_3           |                1 |              1 |
+|  PROG_EXEC/DIVCLOCK_reg_n_0                  |                                      | RESET_IBUF                             |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_7           |                1 |              1 |
+|  OK_START_IBUF_BUFG                          |                                      | RESET_IBUF                             |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_12          |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_8           |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_1           |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_11          |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_14          |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_15          |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_5           |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET             |                1 |              1 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | RESET_IBUF                             |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_0           |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_16          |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_2           |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_6           |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_4           |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_13          |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_3           |                1 |              1 |
+|  Timp_num/divclock                           | Timp_num/min_digit0[3]_P_i_1_n_0     | Timp_num/min_digit0_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_7           |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_12          |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_8           |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_1           |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_11          |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_14          |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_15          |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_5           |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET             |                1 |              1 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | RESET_IBUF                             |                1 |              1 |
+|  Timp_num/divclock                           |                                      | Timp_num/hour_digit_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/divclock                           |                                      | Timp_num/min_digit0_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/divclock                           |                                      | Timp_num/min_digit1_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/divclock                           |                                      | Timp_num/min_digit0_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/divclock                           |                                      | Timp_num/min_digit0_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/divclock                           |                                      | Timp_num/min_digit1_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/divclock                           |                                      | Timp_num/min_digit0_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/divclock                           | Timp_num/hour_digit0                 | Timp_num/hour_digit_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  Timp_num/divclock                           | Timp_num/min_digit0[3]_P_i_1_n_0     | Timp_num/min_digit0_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  Timp_num/divclock                           | Timp_num/min_digit0[3]_P_i_1_n_0     | Timp_num/min_digit0_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  Timp_num/divclock                           | Timp_num/min_digit0[3]_P_i_1_n_0     | Timp_num/min_digit0_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  Timp_num/divclock                           | Timp_num/min_digit10                 | Timp_num/min_digit1_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  Timp_num/divclock                           | Timp_num/min_digit10                 | Timp_num/min_digit1_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  Timp_num/hour_digit_reg[0]_LDC_i_1_n_0      |                                      | Timp_num/hour_digit_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/min_digit0_reg[3]_LDC_i_1_n_0      |                                      | Timp_num/min_digit0_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/min_digit1_reg[0]_LDC_i_1_n_0      |                                      | Timp_num/min_digit1_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/min_digit1_reg[2]_LDC_i_1_n_0      |                                      | Timp_num/min_digit1_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/min_digit0_reg[0]_LDC_i_1_n_0      |                                      | Timp_num/min_digit0_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/min_digit0_reg[2]_LDC_i_1_n_0      |                                      | Timp_num/min_digit0_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  Timp_num/min_digit0_reg[1]_LDC_i_1_n_0      |                                      | Timp_num/min_digit0_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_0           |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_16          |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_2           |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_6           |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_4           |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_13          |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_3           |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_7           |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_11          |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_12          |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_8           |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_1           |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_11          |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_14          |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_15          |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_5           |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET             |                1 |              1 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | RESET_IBUF                             |                1 |              1 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_0           |                1 |              1 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_10          |                1 |              2 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_9           |                1 |              2 |
+|  Timp_num/divclock                           |                                      | Timp_num/hour_digit_reg[1]_LDC_i_1_n_0 |                1 |              2 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_10          |                1 |              2 |
+|  PROG_EXEC/num_spalare_prin/divclock_reg_n_0 |                                      | PROG_EXEC/num_uscare/RESET_9           |                1 |              2 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_10          |                1 |              2 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_10          |                1 |              2 |
+|  Timp_num/divclock                           |                                      | RESET_IBUF                             |                1 |              2 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_10          |                2 |              2 |
+|  PROG_EXEC/num_evacuare/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_9           |                2 |              2 |
+|  PROG_EXEC/num_clatire/divclock_reg_n_0      |                                      | PROG_EXEC/num_uscare/RESET_9           |                2 |              2 |
+|  PROG_EXEC/num_inmuiere/divclock_reg_n_0     |                                      | PROG_EXEC/num_uscare/RESET_9           |                1 |              2 |
+|  PROG_EXEC/num_clatire_sup/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_9           |                2 |              2 |
+|  PROG_EXEC/num_recirculare/divclock_reg_n_0  |                                      | PROG_EXEC/num_uscare/RESET_10          |                2 |              2 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_10          |                1 |              2 |
+|  Timp_num/hour_digit_reg[1]_LDC_i_1_n_0      |                                      | Timp_num/hour_digit_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  PROG_EXEC/num_uscare/divclock_reg_n_0       |                                      | PROG_EXEC/num_uscare/RESET_9           |                1 |              2 |
+|  Timp_num/divclock                           |                                      | Timp_num/hour_digit_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  functii_reg[1]_i_2_n_0                      |                                      |                                        |                1 |              2 |
+|  TIMP_reg[8]_i_2_n_0                         |                                      | RESET_IBUF                             |                1 |              4 |
+|  PROG_EXEC/num_uscare/RESET_13               |                                      | PROG_EXEC/num_uscare/RESET_14          |                5 |              7 |
+|  PROG_EXEC/num_uscare/RESET_3                |                                      | PROG_EXEC/num_uscare/RESET_4           |                3 |              7 |
+|  PROG_EXEC/num_uscare/RESET_7                |                                      | PROG_EXEC/num_uscare/RESET_8           |                3 |              7 |
+|  PROG_EXEC/num_uscare/RESET_1                |                                      | PROG_EXEC/num_uscare/RESET_2           |                3 |              7 |
+|  PROG_EXEC/num_uscare/RESET_11               |                                      | PROG_EXEC/num_uscare/RESET_12          |                5 |              7 |
+|  PROG_EXEC/num_uscare/RESET_5                |                                      | PROG_EXEC/num_uscare/RESET_6           |                3 |              7 |
+|  PROG_EXEC/num_uscare/RESET                  |                                      | PROG_EXEC/num_uscare/RESET_0           |                2 |              7 |
+|  PROG_EXEC/num_uscare/RESET_15               |                                      | PROG_EXEC/num_uscare/RESET_16          |                3 |              7 |
+|  PROG_EXEC/DIVCLOCK_reg_n_0                  | PROG_EXEC/num_clatire_sup/E[0]       | RESET_IBUF                             |                3 |              8 |
+|  PROG_EXEC/timp_reg[9]_i_2_n_0               |                                      | RESET_IBUF                             |                3 |              9 |
+|  PROG_EXEC/DIVCLOCK_reg_n_0                  | PROG_EXEC/PROGRAM2                   | RESET_IBUF                             |                4 |              9 |
+| ~enable_start                                |                                      | RESET_IBUF                             |                3 |             11 |
+|  PROG_EXEC/num_uscare/RESET_9                |                                      | PROG_EXEC/num_uscare/RESET_10          |                8 |             14 |
+|  CLK_IBUF_BUFG                               |                                      |                                        |               12 |             28 |
+|  CLK_IBUF_BUFG                               |                                      | RESET_IBUF                             |               14 |             32 |
+|  CLK_IBUF_BUFG                               | PROG_EXEC/num_evacuare/divclock3     | RESET_IBUF                             |                6 |             32 |
+|  CLK_IBUF_BUFG                               | PROG_EXEC/num_recirculare/divclock3  | RESET_IBUF                             |                7 |             32 |
+|  CLK_IBUF_BUFG                               | PROG_EXEC/num_spalare_prin/divclock3 | RESET_IBUF                             |                6 |             32 |
+|  CLK_IBUF_BUFG                               | PROG_EXEC/num_clatire_sup/divclock3  | RESET_IBUF                             |                6 |             32 |
+|  CLK_IBUF_BUFG                               | Timp_num/incepere_program            | RESET_IBUF                             |                7 |             32 |
+|  CLK_IBUF_BUFG                               | PROG_EXEC/num_inmuiere/divclock3     | RESET_IBUF                             |                7 |             32 |
+|  CLK_IBUF_BUFG                               | PROG_EXEC/num_uscare/divclock3       | RESET_IBUF                             |                8 |             32 |
+|  CLK_IBUF_BUFG                               | PROG_EXEC/num_clatire/divclock3      | RESET_IBUF                             |                7 |             32 |
++----------------------------------------------+--------------------------------------+----------------------------------------+------------------+----------------+
+
+

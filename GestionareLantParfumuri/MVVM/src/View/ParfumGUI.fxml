@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="View.ParfumGUI">
+    <top>
+        <VBox spacing="5">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <GridPane hgap="10" vgap="10">
+                <Label text="Nume:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtNume" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Producător:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtProducator" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <Label text="Descriere:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtDescriere" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                <Label text="Căutare după nume:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtCautare" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                <!--  NOU: câmpuri pentru filtrare -->
+                <Label text="ID Parfumerie (pt. filtrare):" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtFiltruParfumerieId" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                <Label text="Producător (pt. filtrare):" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtFiltruProducator" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+            </GridPane>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox spacing="10">
+            <HBox spacing="10" alignment="CENTER">
+                <padding>
+                    <Insets top="10" right="10" bottom="0" left="10"/>
+                </padding>
+                <Button text="Adaugă" onAction="#onAdd"/>
+                <Button text="Actualizează" onAction="#onUpdate"/>
+                <Button text="Șterge" onAction="#onDelete"/>
+                <Button text="Caută" onAction="#onSearch"/>
+                <Button text="Afișează Toate" onAction="#onAfiseaza"/>
+                <Button text="Salvează CSV" onAction="#onExportCSV"/>
+                <Button text="Salvează DOC" onAction="#onExportDOC"/>
+            </HBox>
+
+            <!--  Buton nou pentru filtrare -->
+            <HBox spacing="10" alignment="CENTER">
+                <padding>
+                    <Insets top="0" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Filtrare parfumuri" onAction="#onFiltrareParfumuri"/>
+            </HBox>
+
+            <ScrollPane fitToWidth="true" prefHeight="400">
+                <content>
+                    <VBox fx:id="imageContainer" spacing="10" alignment="CENTER_LEFT">
+                        <padding>
+                            <Insets top="10" right="10" bottom="10" left="10"/>
+                        </padding>
+                    </VBox>
+                </content>
+            </ScrollPane>
+        </VBox>
+    </center>
+    <bottom>
+        <TextArea fx:id="txtOutput" wrapText="true" prefRowCount="3"/>
+    </bottom>
+</BorderPane>

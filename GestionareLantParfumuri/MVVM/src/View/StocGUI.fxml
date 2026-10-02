@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="View.StocGUI">
+    <top>
+        <VBox spacing="5">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <GridPane hgap="10" vgap="10">
+                <Label text="ID Parfumerie:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtIdParfumerie" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="ID Parfum:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtIdParfum" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <Label text="Cantitate:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtCantitate" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                <Label text="Disponibilitate (true/false):" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtDisponibilitate" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            </GridPane>
+        </VBox>
+    </top>
+
+    <center>
+        <HBox spacing="10" alignment="CENTER">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Adaugă" onAction="#onAdd"/>
+            <Button text="Actualizează" onAction="#onUpdate"/>
+            <Button text="Șterge" onAction="#onDelete"/>
+            <Button text="Filtrare stoc epuizat" onAction="#onFiltrare"/>
+            <Button text="Afișează Toate" onAction="#onAfiseaza"/>
+        </HBox>
+    </center>
+
+    <bottom>
+        <TextArea fx:id="txtOutput" prefRowCount="10" wrapText="true"/>
+    </bottom>
+</BorderPane>

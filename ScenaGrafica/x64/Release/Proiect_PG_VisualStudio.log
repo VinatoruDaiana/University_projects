@@ -1,0 +1,15 @@
+﻿  main.cpp
+C:\Users\Daiana\Desktop\Proiect_PG_VisualStudio\Proiect_PG_VisualStudio\main.cpp(289,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Daiana\Desktop\Proiect_PG_VisualStudio\Proiect_PG_VisualStudio\main.cpp(290,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Daiana\Desktop\Proiect_PG_VisualStudio\Proiect_PG_VisualStudio\main.cpp(294,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Daiana\Desktop\Proiect_PG_VisualStudio\Proiect_PG_VisualStudio\main.cpp(295,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Daiana\Desktop\Proiect_PG_VisualStudio\Proiect_PG_VisualStudio\main.cpp(296,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Daiana\Desktop\Proiect_PG_VisualStudio\Proiect_PG_VisualStudio\main.cpp(297,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Daiana\Desktop\Proiect_PG_VisualStudio\Proiect_PG_VisualStudio\main.cpp(401,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Daiana\Desktop\Proiect_PG_VisualStudio\Proiect_PG_VisualStudio\main.cpp(577,49): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  2 of 1875 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    28 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Proiect_PG_VisualStudio.vcxproj -> C:\Users\Daiana\Desktop\Proiect_PG_VisualStudio\x64\Release\Proiect_PG_VisualStudio.exe

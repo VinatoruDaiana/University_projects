@@ -1,0 +1,3 @@
+C:/Users/Daiana/Desktop/AN3_SEM2/PI/PROIECT/Proiect/cmake-build-debug/CMakeFiles/Proiect.dir
+C:/Users/Daiana/Desktop/AN3_SEM2/PI/PROIECT/Proiect/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Daiana/Desktop/AN3_SEM2/PI/PROIECT/Proiect/cmake-build-debug/CMakeFiles/rebuild_cache.dir
